@@ -7,57 +7,15 @@
     <title>Mohsen Mohammad Pour | id5090261.ir</title>
     <meta name="description" content="Personal Site" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        img {
-            width: 100px;
-            border-radius: 100%;
-            margin-bottom: 50px;
-            filter: grayscale();
-        }
-
-        img:hover {
-            filter: none;
-            transition: filter 1s ease;
-        }
-
-        ul {
-            display: flex;
-            gap: 8px;
-            padding: 0;
-        }
-
-        li {
-            display: flex;
-            transition: transform 0.3s ease;
-        }
-
-        li:hover {
-            transform: scale(1.2);
-        }
-
-        p {
-            font-family: Arial, sans-serif;
-            line-height: 0;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="/Profile.webp" width="100" height="100" alt="profile" />
-    <p>Hi friend,</p>
-    <p>I'm Mohsen Mohammad Pour</p>
+    <img src="Profile.webp" width="100" height="100" alt="profile" />
+
+    <p>Hi Friend,</p>
+    <p>I'm Mohsen Mohammad Pour.</p>
+
     <ul>
         <li>
             <a href="https://www.linkedin.com/in/id5090261" aria-label="linkedin"><svg
@@ -74,14 +32,72 @@
                         stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
                 </svg></a>
         </li>
-        <li>
-            <a href="https://t.me/id5090261" aria-label="telegram"><svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+        <li class="disabled">
+            <a href="#" aria-label="reddit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <ellipse cx="12" cy="15.5" rx="9" ry="6.5" stroke="currentColor" stroke-width="1.5" />
                     <path
-                        d="M11.9854 15.4083L15.2268 19.0936C16.4277 20.4589 17.0282 21.1416 17.6567 20.9754C18.2852 20.8092 18.5008 19.9108 18.9318 18.1138L21.3229 8.1459C21.9868 5.37832 22.3187 3.99454 21.5808 3.312C20.843 2.62947 19.564 3.13725 17.0061 4.15282L5.13876 8.86449C3.09293 9.67674 2.07001 10.0829 2.00507 10.7808C1.99842 10.8522 1.99831 10.9241 2.00474 10.9955C2.06754 11.6937 3.08921 12.1033 5.13255 12.9223C6.05838 13.2934 6.5213 13.479 6.8532 13.8344C6.89052 13.8743 6.9264 13.9157 6.96078 13.9584C7.26658 14.3384 7.39709 14.8371 7.65808 15.8344L8.14653 17.701C8.4005 18.6715 8.52749 19.1568 8.86008 19.223C9.19267 19.2891 9.48225 18.8867 10.0614 18.0819L11.9854 15.4083ZM11.9854 15.4083L11.6676 15.0771C11.3059 14.7001 11.1251 14.5117 11.1251 14.2775C11.1251 14.0433 11.3059 13.8548 11.6676 13.4778L15.2406 9.75409"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        d="M15.5 16.7803C14.5149 17.548 13.3062 18.0002 12 18.0002C10.6938 18.0002 9.48512 17.548 8.5 16.7803"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <circle cx="19" cy="4" r="2" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M18 10.0694C18.3687 9.43053 19.0634 9 19.8595 9C21.0417 9 22 9.94921 22 11.1201C22 11.937 21.5336 12.6459 20.8502 13"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path
+                        d="M6 10.0694C5.63125 9.43053 4.93663 9 4.14048 9C2.95833 9 2 9.94921 2 11.1201C2 11.937 2.4664 12.6459 3.14981 13"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M17 4C14.643 4 13.4645 4 12.7322 4.73223C12 5.46447 12 6.64298 12 9" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9.00801 13L8.99902 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M15.008 13L14.999 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
                 </svg></a>
         </li>
+        <li class="disabled">
+            <a href="#" aria-label="medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <circle cx="6.5" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5" />
+                    <ellipse cx="15.5" cy="12" rx="2.5" ry="4.5" stroke="currentColor" stroke-width="1.5" />
+                    <ellipse cx="21" cy="12" rx="1" ry="4.5" stroke="currentColor" stroke-width="1.5" />
+                </svg></a>
+        </li>
+        <li>
+            <a href="https://github.com/id5090261" aria-label="github"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M10 20.5675C6.57143 21.7248 3.71429 20.5675 2 17" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M10 22V18.7579C10 18.1596 10.1839 17.6396 10.4804 17.1699C10.6838 16.8476 10.5445 16.3904 10.1771 16.2894C7.13394 15.4528 5 14.1077 5 9.64606C5 8.48611 5.38005 7.39556 6.04811 6.4464C6.21437 6.21018 6.29749 6.09208 6.31748 5.9851C6.33746 5.87813 6.30272 5.73852 6.23322 5.45932C5.95038 4.32292 5.96871 3.11619 6.39322 2.02823C6.39322 2.02823 7.27042 1.74242 9.26698 2.98969C9.72282 3.27447 9.95075 3.41686 10.1515 3.44871C10.3522 3.48056 10.6206 3.41384 11.1573 3.28041C11.8913 3.09795 12.6476 3 13.5 3C14.3524 3 15.1087 3.09795 15.8427 3.28041C16.3794 3.41384 16.6478 3.48056 16.8485 3.44871C17.0493 3.41686 17.2772 3.27447 17.733 2.98969C19.7296 1.74242 20.6068 2.02823 20.6068 2.02823C21.0313 3.11619 21.0496 4.32292 20.7668 5.45932C20.6973 5.73852 20.6625 5.87813 20.6825 5.9851C20.7025 6.09207 20.7856 6.21019 20.9519 6.4464C21.6199 7.39556 22 8.48611 22 9.64606C22 14.1077 19.8661 15.4528 16.8229 16.2894C16.4555 16.3904 16.3162 16.8476 16.5196 17.1699C16.8161 17.6396 17 18.1596 17 18.7579V22"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+        </li>
+        <li class="disabled">
+            <a href="#" aria-label="dribbble"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M22 13.2644C21.0732 13.0906 20.12 13 19.1472 13C13.7948 13 9.03435 15.7425 6 20"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M19 5C15.8705 8.66742 11.1679 11 5.90962 11C4.56437 11 3.25548 10.8473 2 10.5587"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M14.6178 22C14.8684 20.786 15 19.5287 15 18.2407C15 11.9247 11.8343 6.34645 7 3"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></a>
+        </li>
+        <li class="disabled">
+            <a href="#" aria-label="behance"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <path
+                        d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    <path
+                        d="M6.75085 11.985V9.00492C6.75085 8.72282 6.9824 8.49414 7.26802 8.49414H9.24582C9.68571 8.49414 10.1378 8.56982 10.4656 8.8595C10.8163 9.16935 11.1564 9.64935 11.1395 10.2909C11.1199 11.0391 10.5736 11.9234 9.77316 11.985C8.97271 12.0466 8.22065 11.985 6.75085 11.985ZM6.75085 11.985V14.9675C6.75085 15.2496 6.98243 15.478 7.26804 15.4808C8.40871 15.4917 9.07239 15.5322 9.77316 15.4783C10.5736 15.4166 11.1199 14.5323 11.1395 13.7841C11.1564 13.1426 10.8163 12.6626 10.4656 12.3527C10.1378 12.063 9.68571 11.9873 9.24582 11.9873L6.75085 11.985ZM16.7954 14.9655C16.3572 15.3901 14.2227 16.2293 13.4537 14.0205C13.3738 13.8 13.3102 13.3244 13.3473 12.957M13.3473 12.957C13.4106 12.3314 13.6867 11.4539 14.7115 11.0958C16.1791 10.583 17.102 12.0065 17.341 12.957H13.3473ZM14.5888 9.00095H15.949"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+        </li>
+    </ul>
+
+    <ul>
         <li>
             <a href="https://twitter.com/id5090261" aria-label="twitter"><svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
@@ -111,6 +127,80 @@
                         stroke-linejoin="round" />
                 </svg></a>
         </li>
+        <li class="disabled">
+            <a href="#" aria-label="bluesky"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <path
+                        d="M12 11.4963C11.8936 11.2963 7.45492 3 3.50417 3C1.33647 3 2.00456 8 2.50443 10.5C2.70653 11.5108 3.50417 14.5 8.003 14C8.003 14 4.00404 14.5 4.00404 17C4.00404 18.5 6.50339 21 8.50287 21C10.4606 21 11.9391 16.6859 12 16.5058C12.0609 16.6859 13.5394 21 15.4971 21C17.4966 21 19.996 18.5 19.996 17C19.996 14.5 15.997 14 15.997 14C20.4958 14.5 21.2935 11.5108 21.4956 10.5C21.9954 8 22.6635 3 20.4958 3C16.5451 3 12.1064 11.2963 12 11.4963Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></a>
+        </li>
+        <li class="disabled">
+            <a href="#" aria-label="pinterest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <path d="M12 11L8 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M9.97368 16.5724C10.5931 16.8473 11.2787 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 12.9108 7.24367 13.7646 7.66921 14.5"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                </svg></a>
+        </li>
+        <li class="disabled">
+            <a href="#" aria-label="tiktok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <path
+                        d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    <path
+                        d="M10.5359 11.0075C9.71585 10.8916 7.84666 11.0834 6.93011 12.7782C6.01355 14.4729 6.9373 16.2368 7.51374 16.9069C8.08298 17.5338 9.89226 18.721 11.8114 17.5619C12.2871 17.2746 12.8797 17.0603 13.552 14.8153L13.4738 5.98145C13.3441 6.95419 14.4186 9.23575 17.478 9.5057"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+        </li>
+    </ul>
+
+    <ul>
+        <li class="disabled">
+            <a href="#" aria-label="youtube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <path
+                        d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg></a>
+        </li>
+        <li class="disabled">
+            <a href="#" aria-label="vimeo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <path
+                        d="M21.3459 4.65406C19.0372 2.82124 15.4614 5.64316 14.5961 7.12694C15.8974 7.43176 18.5 7.54313 16 12.0276C15 13.6885 12.7 15.8145 11.5 11.0311C10 5.05175 10 0.567257 2 7.54313C2.47556 8.4911 3.76645 8.5883 4.74116 8.17029C5.62781 7.79005 6.54267 7.94136 7 9.53652C8 13.0245 8.5 19.9866 12 19.9866C15.6345 20.4812 24.461 7.12711 21.3459 4.65406Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+        </li>
+    </ul>
+
+    <ul>
+        <li class="disabled">
+            <a href="#" aria-label="whatsapp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#000000" fill="none">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.3789 2.27907 14.6926 2.78382 15.8877C3.06278 16.5481 3.20226 16.8784 3.21953 17.128C3.2368 17.3776 3.16334 17.6521 3.01642 18.2012L2 22L5.79877 20.9836C6.34788 20.8367 6.62244 20.7632 6.87202 20.7805C7.12161 20.7977 7.45185 20.9372 8.11235 21.2162C9.30745 21.7209 10.6211 22 12 22Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    <path
+                        d="M8.58815 12.3773L9.45909 11.2956C9.82616 10.8397 10.2799 10.4153 10.3155 9.80826C10.3244 9.65494 10.2166 8.96657 10.0008 7.58986C9.91601 7.04881 9.41086 7 8.97332 7C8.40314 7 8.11805 7 7.83495 7.12931C7.47714 7.29275 7.10979 7.75231 7.02917 8.13733C6.96539 8.44196 7.01279 8.65187 7.10759 9.07169C7.51023 10.8548 8.45481 12.6158 9.91948 14.0805C11.3842 15.5452 13.1452 16.4898 14.9283 16.8924C15.3481 16.9872 15.558 17.0346 15.8627 16.9708C16.2477 16.8902 16.7072 16.5229 16.8707 16.165C17 15.8819 17 15.5969 17 15.0267C17 14.5891 16.9512 14.084 16.4101 13.9992C15.0334 13.7834 14.3451 13.6756 14.1917 13.6845C13.5847 13.7201 13.1603 14.1738 12.7044 14.5409L11.6227 15.4118"
+                        stroke="currentColor" stroke-width="1.5" />
+                </svg></a>
+        </li>
+        <li>
+            <a href="https://t.me/id5090261" aria-label="telegram"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path
+                        d="M11.9854 15.4083L15.2268 19.0936C16.4277 20.4589 17.0282 21.1416 17.6567 20.9754C18.2852 20.8092 18.5008 19.9108 18.9318 18.1138L21.3229 8.1459C21.9868 5.37832 22.3187 3.99454 21.5808 3.312C20.843 2.62947 19.564 3.13725 17.0061 4.15282L5.13876 8.86449C3.09293 9.67674 2.07001 10.0829 2.00507 10.7808C1.99842 10.8522 1.99831 10.9241 2.00474 10.9955C2.06754 11.6937 3.08921 12.1033 5.13255 12.9223C6.05838 13.2934 6.5213 13.479 6.8532 13.8344C6.89052 13.8743 6.9264 13.9157 6.96078 13.9584C7.26658 14.3384 7.39709 14.8371 7.65808 15.8344L8.14653 17.701C8.4005 18.6715 8.52749 19.1568 8.86008 19.223C9.19267 19.2891 9.48225 18.8867 10.0614 18.0819L11.9854 15.4083ZM11.9854 15.4083L11.6676 15.0771C11.3059 14.7001 11.1251 14.5117 11.1251 14.2775C11.1251 14.0433 11.3059 13.8548 11.6676 13.4778L15.2406 9.75409"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></a>
+        </li>
         <li>
             <a href="https://discordapp.com/users/551845456909565971" aria-label="discord"><svg
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
@@ -127,16 +217,6 @@
                     <path
                         d="M10.2508 12.25C10.2508 13.3546 9.46729 14.25 8.50079 14.25C7.5343 14.25 6.75079 13.3546 6.75079 12.25C6.75079 11.1454 7.5343 10.25 8.50079 10.25C9.46729 10.25 10.2508 11.1454 10.2508 12.25Z"
                         stroke="currentColor" stroke-width="1.5" />
-                </svg></a>
-        </li>
-        <li>
-            <a href="https://github.com/id5090261" aria-label="github"><svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                    <path d="M10 20.5675C6.57143 21.7248 3.71429 20.5675 2 17" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M10 22V18.7579C10 18.1596 10.1839 17.6396 10.4804 17.1699C10.6838 16.8476 10.5445 16.3904 10.1771 16.2894C7.13394 15.4528 5 14.1077 5 9.64606C5 8.48611 5.38005 7.39556 6.04811 6.4464C6.21437 6.21018 6.29749 6.09208 6.31748 5.9851C6.33746 5.87813 6.30272 5.73852 6.23322 5.45932C5.95038 4.32292 5.96871 3.11619 6.39322 2.02823C6.39322 2.02823 7.27042 1.74242 9.26698 2.98969C9.72282 3.27447 9.95075 3.41686 10.1515 3.44871C10.3522 3.48056 10.6206 3.41384 11.1573 3.28041C11.8913 3.09795 12.6476 3 13.5 3C14.3524 3 15.1087 3.09795 15.8427 3.28041C16.3794 3.41384 16.6478 3.48056 16.8485 3.44871C17.0493 3.41686 17.2772 3.27447 17.733 2.98969C19.7296 1.74242 20.6068 2.02823 20.6068 2.02823C21.0313 3.11619 21.0496 4.32292 20.7668 5.45932C20.6973 5.73852 20.6625 5.87813 20.6825 5.9851C20.7025 6.09207 20.7856 6.21019 20.9519 6.4464C21.6199 7.39556 22 8.48611 22 9.64606C22 14.1077 19.8661 15.4528 16.8229 16.2894C16.4555 16.3904 16.3162 16.8476 16.5196 17.1699C16.8161 17.6396 17 18.1596 17 18.7579V22"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg></a>
         </li>
         <li>
@@ -160,6 +240,8 @@
                 </svg></a>
         </li>
     </ul>
+
+    <script src="script.js"></script>
 
 </body>
 
