@@ -16,6 +16,7 @@ html {
     align-items: center;
     justify-content: center;
     transition: 500ms ease-in-out;
+    gap: 20px;
 }
 
 body.white {
@@ -40,7 +41,6 @@ img:hover {
 ul {
     display: flex;
     gap: 8px;
-    margin-top: 20px;
 }
 
 li {
@@ -53,7 +53,6 @@ li:hover {
 }
 
 p {
-    line-height: 2em;
     font-size: 14px;
     letter-spacing: 2px;
     color: white;
@@ -99,4 +98,12 @@ button {
     mix-blend-mode: difference;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.tab {
+    cursor: pointer;
+}
+
+.content {
+    display: none;
 }
