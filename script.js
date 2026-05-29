@@ -1,4 +1,3 @@
-const THEME_KEY = "preferred-theme";
 const tabLabels = [
   "Professional links",
   "Social links",
@@ -7,54 +6,33 @@ const tabLabels = [
   "Support links",
 ];
 
-const getStoredTheme = () => {
-  try {
-    return localStorage.getItem(THEME_KEY);
-  } catch {
-    return null;
-  }
-};
-
-const storeTheme = (theme) => {
-  try {
-    localStorage.setItem(THEME_KEY, theme);
-  } catch {
-    // Storage can be unavailable in private or restricted browsing modes.
-  }
-};
-
 document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
-  const themeToggle = document.querySelector("#theme-toggle");
+  const themeToggle = document.querySelector("#DarkModeToggle");
   const tabs = Array.from(document.querySelectorAll(".tab"));
   const contents = Array.from(document.querySelectorAll(".content"));
 
-  const prefersLight = window.matchMedia(
-    "(prefers-color-scheme: light)",
-  ).matches;
-  const initialTheme = getStoredTheme() || (prefersLight ? "light" : "dark");
-
-  const setTheme = (theme, shouldStore = false) => {
-    const isLight = theme === "light";
-
-    body.dataset.theme = isLight ? "light" : "dark";
+  const updateThemeToggle = () => {
+    const isLight = body.classList.contains("white");
     themeToggle.setAttribute("aria-pressed", String(isLight));
     themeToggle.setAttribute(
       "aria-label",
       isLight ? "Switch to dark mode" : "Switch to light mode",
     );
-
-    if (shouldStore) {
-      storeTheme(body.dataset.theme);
-    }
   };
 
   themeToggle.addEventListener("click", () => {
-    const nextTheme = body.dataset.theme === "light" ? "dark" : "light";
-    setTheme(nextTheme, true);
+    body.classList.toggle("white");
+    updateThemeToggle();
   });
 
   const showContent = (selectedIndex) => {
+    const selectedContent = contents[selectedIndex];
+
+    if (!selectedContent) {
+      return;
+    }
+
     contents.forEach((content, index) => {
       const isActive = index === selectedIndex;
 
@@ -74,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
     tab.setAttribute("aria-selected", "false");
 
     if (!content) {
-      tab.classList.add("disabled");
       tab.setAttribute("aria-disabled", "true");
       tab.setAttribute("tabindex", "-1");
       return;
@@ -121,6 +98,5 @@ document.addEventListener("DOMContentLoaded", () => {
     link.rel = "noopener noreferrer";
   });
 
-  setTheme(initialTheme);
-  showContent(0);
+  updateThemeToggle();
 });
